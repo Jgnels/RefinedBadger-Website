@@ -3,18 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>404 &mdash; RefinedBadger</title>
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <title>404 â€” RefinedBadger</title>
+  <meta name="theme-color" content="#b7612d">
+  <link rel="icon" href="/assets/refinedbadger-logo.png" type="image/png">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <main style="min-height:100vh;display:grid;place-items:center">
-    <section style="max-width:720px">
-      <p class="eyebrow">404</p>
-      <h1 style="font-size:clamp(3rem,10vw,6rem)">Nothing here yet.</h1>
-      <p class="hero-text">The page you requested does not exist.</p>
-      <a class="button button-primary" href="/">Return to RefinedBadger</a>
+  <main class="error-page">
+    <section class="error-card">
+      <img src="/assets/refinedbadger-logo.png" alt="RefinedBadger" class="error-logo">
+      <div>
+        <p class="eyebrow">404</p>
+        <h1>Nothing here yet.</h1>
+        <p class="hero-text">The page you requested does not exist.</p>
+        <a class="button button-primary" href="/">Return to RefinedBadger</a>
+      </div>
     </section>
   </main>
+  <style>
+    .error-page{min-height:100vh;display:grid;place-items:center;padding:40px 0}
+    .error-card{width:min(980px,calc(100% - 40px));display:grid;grid-template-columns:minmax(240px,380px) 1fr;gap:56px;align-items:center}
+    .error-logo{width:100%;height:auto;display:block;background:#fff;border:1px solid var(--line)}
+    .error-card h1{font-size:clamp(3rem,8vw,6rem)}
+    @media(max-width:760px){.error-card{grid-template-columns:1fr}.error-logo{max-width:360px}}
+  </style>
 </body>
 </html>
