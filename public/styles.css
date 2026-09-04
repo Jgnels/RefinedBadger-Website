@@ -7,8 +7,11 @@
   --muted: #8f8b84;
   --line: rgba(255, 255, 255, 0.14);
   --line-strong: rgba(255, 255, 255, 0.26);
-  --copper: #c36c36;
-  --copper-light: #dc9364;
+  --copper-dark: #71361f;
+  --copper: #b5653b;
+  --copper-light: #dfa06f;
+  --copper-bright: #f0c192;
+  --copper-metal: linear-gradient(102deg, #71361f 0%, #9b4d2b 18%, #c8794a 36%, #f0c192 51%, #d38a59 62%, #ad5b34 78%, #743820 100%);
   --max: 1400px;
   --content: 1180px;
   --gutter: clamp(16px, 3.2vw, 44px);
@@ -155,11 +158,21 @@ h1 {
   text-shadow: 0 2px 20px rgba(0,0,0,.55);
 }
 .hero-status { color: #d7cfc5; }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .eyebrow,
+  .hero-status,
+  .history-lines p:nth-child(2),
+  .progression b {
+    background: var(--copper-metal);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
 
 .copperlight,
 .keepsmith,
-.studio,
-.contact {
+.studio {
   width: min(var(--content), calc(100% - (var(--gutter) * 2)));
   margin-inline: auto;
 }
@@ -241,13 +254,14 @@ h2 {
 
 .studio {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(44px, 7vw, 98px);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(210px, .62fr);
+  gap: clamp(40px, 6vw, 82px);
+  align-items: center;
   padding: clamp(88px, 10vw, 138px) 0;
   border-top: 1px solid var(--line);
 }
 .studio h2 { margin-top: 14px; font-size: clamp(2.6rem, 5vw, 4.9rem); }
-.studio-copy { align-self: end; }
+.studio-copy { align-self: center; }
 .studio-copy p {
   max-width: 590px;
   margin-bottom: 18px;
@@ -256,26 +270,19 @@ h2 {
   line-height: 1.72;
 }
 .studio-copy p:last-child { margin-bottom: 0; color: var(--muted); }
+.studio-logo {
+  width: min(100%, 300px);
+  justify-self: end;
+  padding: 1px;
+  background: var(--copper-metal);
+}
+.studio-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #f6f2eb;
+}
 
-.contact {
-  padding: clamp(88px, 11vw, 150px) 0;
-  border-top: 1px solid var(--line);
-}
-.contact h2 {
-  max-width: 920px;
-  margin: 14px 0 34px;
-  font-size: clamp(2.25rem, 4.7vw, 4.5rem);
-}
-.contact a {
-  display: inline-block;
-  color: var(--text);
-  font-size: clamp(1.05rem, 2vw, 1.42rem);
-  font-weight: 760;
-  text-decoration-color: var(--copper-light);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 8px;
-}
-.contact a:hover { color: var(--copper-light); }
 
 .site-footer {
   min-height: 108px;
@@ -301,6 +308,12 @@ h2 {
   color: #827e78;
   font-size: .74rem;
 }
+.footer-meta a {
+  color: #a29d96;
+  text-decoration-color: var(--copper);
+  text-underline-offset: 4px;
+}
+.footer-meta a:hover { color: var(--copper-light); }
 
 :focus-visible {
   outline: 3px solid var(--copper-light);
@@ -323,6 +336,7 @@ h2 {
   .copperlight-body,
   .keepsmith,
   .studio { grid-template-columns: 1fr; }
+  .studio-logo { justify-self: start; width: min(100%, 300px); }
   .section-heading { gap: 14px; }
   .copperlight-body { gap: 24px; }
   .keepsmith,
@@ -341,8 +355,7 @@ h2 {
   .hero-media img { object-position: 52% center; }
   .copperlight,
   .keepsmith,
-  .studio,
-  .contact { width: calc(100% - 28px); }
+  .studio { width: calc(100% - 28px); }
   h1 { font-size: clamp(2.85rem, 14vw, 4.8rem); }
   .progression { gap: 9px; }
   .progression b { display: none; }
