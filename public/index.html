@@ -3,27 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>RefinedBadger &mdash; Independent Video Game Studio</title>
-  <meta name="description" content="RefinedBadger is an independent Utah video game studio developing Copperlight and KeepSmith for PC.">
-  <meta name="theme-color" content="#0b0c0d">
+  <title>RefinedBadger &mdash; Video Game Studio</title>
+  <meta name="description" content="RefinedBadger is an independent video game studio creating Copperlight and KeepSmith.">
+  <meta name="theme-color" content="#090a0b">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="RefinedBadger &mdash; Independent Video Game Studio">
-  <meta property="og:description" content="An independent Utah studio developing Copperlight and KeepSmith for PC.">
+  <meta property="og:title" content="RefinedBadger &mdash; Video Game Studio">
+  <meta property="og:description" content="Creating Copperlight and KeepSmith.">
   <meta property="og:url" content="https://refinedbadger.com/">
-  <meta property="og:image" content="https://refinedbadger.com/assets/refinedbadger-logo.png">
-  <meta property="og:image:alt" content="RefinedBadger studio crest.">
+  <meta property="og:image" content="https://refinedbadger.com/assets/copperlight-social.jpg">
+  <meta property="og:image:alt" content="Copperlight visual: a spear-carrying woman beside ancient standing stones under an auroral sky.">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="RefinedBadger &mdash; Independent Video Game Studio">
-  <meta name="twitter:description" content="An independent Utah studio developing Copperlight and KeepSmith for PC.">
-  <meta name="twitter:image" content="https://refinedbadger.com/assets/refinedbadger-logo.png">
+  <meta name="twitter:title" content="RefinedBadger &mdash; Video Game Studio">
+  <meta name="twitter:description" content="Creating Copperlight and KeepSmith.">
+  <meta name="twitter:image" content="https://refinedbadger.com/assets/copperlight-social.jpg">
 
   <link rel="canonical" href="https://refinedbadger.com/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/refinedbadger-logo.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="preload" as="image" href="/assets/copperlight-development-1600.webp" type="image/webp">
+  <link rel="preload" as="image" href="/assets/copperlight-hero-1600.webp" type="image/webp">
   <link rel="stylesheet" href="/styles.css">
 
   <script type="application/ld+json">
@@ -34,13 +36,7 @@
     "alternateName": "RefinedBadger",
     "url": "https://refinedbadger.com/",
     "logo": "https://refinedbadger.com/assets/refinedbadger-logo.png",
-    "email": "hello@refinedbadger.com",
-    "foundingDate": "2026-09-02",
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "UT",
-      "addressCountry": "US"
-    }
+    "email": "hello@refinedbadger.com"
   }
   </script>
 </head>
@@ -49,7 +45,7 @@
 
   <header class="site-header">
     <a class="brand" href="/" aria-label="RefinedBadger home">
-      <img class="brand-mark" src="/assets/favicon.svg" width="42" height="42" alt="">
+      <img class="brand-mark" src="/assets/refinedbadger-header-mark.webp" width="52" height="52" alt="">
       <span class="brand-word">REFINEDBADGER</span>
     </a>
     <nav aria-label="Primary navigation">
@@ -61,95 +57,83 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero-media">
+        <source
+          type="image/webp"
+          srcset="/assets/copperlight-hero-960.webp 960w, /assets/copperlight-hero-1600.webp 1600w"
+          sizes="(max-width: 800px) 100vw, 94vw">
+        <img
+          src="/assets/copperlight-hero-1600.webp"
+          width="1600"
+          height="900"
+          fetchpriority="high"
+          alt="A spear-carrying woman stands beside ancient stone monoliths in a mountain valley beneath an aurora.">
+      </picture>
+      <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="eyebrow">Independent video game studio &middot; Utah</p>
-        <h1 id="hero-title">Worlds that remember what you change.</h1>
-        <p class="hero-text">We're a small studio developing Copperlight and KeepSmith for PC.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#games">View games</a>
-          <a class="button button-secondary" href="#contact">Industry contact</a>
-        </div>
-      </div>
-
-      <figure class="hero-visual">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="/assets/copperlight-development-960.webp 960w, /assets/copperlight-development-1600.webp 1600w"
-            sizes="(max-width: 840px) 100vw, 55vw">
-          <img
-            src="/assets/copperlight-development-1600.webp"
-            width="1600"
-            height="900"
-            fetchpriority="high"
-            alt="Development visual for Copperlight showing a spear-carrying woman in a mountain forest beside rune-marked standing stones.">
-        </picture>
-        <div class="visual-title" aria-hidden="true">
-          <span>Copperlight</span>
-          <span>PC &middot; In development</span>
-        </div>
-        <figcaption>Development visual &middot; not final gameplay</figcaption>
-      </figure>
-    </section>
-
-    <div class="project-strip" aria-label="Current development">
-      <span class="strip-label">Current development</span>
-      <a href="#copperlight"><strong>Copperlight</strong><span>PC &middot; In development</span></a>
-      <a href="#keepsmith"><strong>KeepSmith</strong><span>Working title &middot; PC &middot; Preproduction</span></a>
-    </div>
-
-    <section class="section games" id="games" aria-labelledby="games-title">
-      <div class="section-kicker">
-        <p class="eyebrow">Games</p>
-        <h2 id="games-title">What we're building</h2>
-      </div>
-
-      <article class="game-entry game-entry-primary" id="copperlight">
-        <div class="game-index" aria-hidden="true">01</div>
-        <div class="game-heading">
-          <p class="game-meta">PC &middot; Active development</p>
-          <h3>Copperlight</h3>
-        </div>
-        <div class="game-copy">
-          <p>Start with one person and one hearth. Build, delegate, and shape the first chapter of a people whose history persists.</p>
-        </div>
-      </article>
-
-      <article class="game-entry" id="keepsmith">
-        <div class="game-index" aria-hidden="true">02</div>
-        <div class="game-heading">
-          <p class="game-meta">Working title &middot; PC &middot; Preproduction</p>
-          <h3>KeepSmith</h3>
-        </div>
-        <div class="game-copy">
-          <p>Restore a monster-ravaged medieval settlement one property at a time. Find out what drove people away, deal with it, rebuild, and bring the place back to life.</p>
-        </div>
-      </article>
-    </section>
-
-    <section class="studio-section" id="studio" aria-labelledby="studio-title">
-      <div class="studio-copy">
-        <p class="eyebrow">Studio</p>
-        <h2 id="studio-title">A small studio in Utah.</h2>
-        <p>RefinedBadger is an independent video game studio building its first PC games: Copperlight and KeepSmith.</p>
-      </div>
-      <div class="crest-frame">
-        <img src="/assets/refinedbadger-logo.png" alt="RefinedBadger crest featuring a formal badger with copper accents." loading="lazy">
+        <p class="hero-kicker">Copperlight</p>
+        <h1 id="hero-title">Live through the history of a people.</h1>
+        <p class="hero-summary">Begin with one vulnerable person and a first hearth. Carry one worldline through family, settlement, civilization, collapse, recovery, and the stars.</p>
+        <p class="hero-status">PC &middot; In development</p>
       </div>
     </section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <section class="copperlight" id="games" aria-labelledby="copperlight-title">
+      <div class="section-heading">
+        <p class="eyebrow">Copperlight</p>
+        <h2 id="copperlight-title">From first hearth to the stars.</h2>
+      </div>
+
+      <div class="copperlight-body">
+        <p class="lead">Copperlight begins close to the ground: water, food, shelter, relationships, and a fire beneath a dangerous, beautiful sky. Nearby, old stones answer the aurora.</p>
+        <p>As generations pass, households become clans and settlements, settlements become realms and civilizations, and the player's perspective grows with them without erasing the people and places that came before.</p>
+      </div>
+
+      <div class="progression" aria-label="Copperlight progression">
+        <span>Person / Hearth</span><b aria-hidden="true">&rarr;</b>
+        <span>Clan</span><b aria-hidden="true">&rarr;</b>
+        <span>Settlement</span><b aria-hidden="true">&rarr;</b>
+        <span>Realm</span><b aria-hidden="true">&rarr;</b>
+        <span>Civilization</span><b aria-hidden="true">&rarr;</b>
+        <span>Stars</span>
+      </div>
+
+      <div class="history-lines">
+        <p>People remain people.</p>
+        <p>History leaves matter behind.</p>
+        <p>The world remembers.</p>
+      </div>
+    </section>
+
+    <section class="keepsmith" aria-labelledby="keepsmith-title">
       <div>
-        <p class="eyebrow">Industry contact</p>
-        <h2 id="contact-title">Publishing &middot; Platforms &middot; Grants &middot; Partnerships</h2>
+        <p class="eyebrow">KeepSmith</p>
+        <h2 id="keepsmith-title">Bring a dead place back to life.</h2>
       </div>
-      <a class="contact-link" href="mailto:hello@refinedbadger.com">hello@refinedbadger.com</a>
+      <p>Restore a monster-ravaged medieval settlement one property at a time. Investigate what drove people out, resolve the supernatural threat, repair what was destroyed, and watch ordinary life return.</p>
+    </section>
+
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="studio-title">
+        <p class="eyebrow">RefinedBadger</p>
+        <h2 id="studio-title">Games built to keep their history.</h2>
+      </div>
+      <div class="studio-copy">
+        <p>We make games where systems, places, and people carry the consequences of what players do instead of resetting around them.</p>
+        <p>Copperlight and KeepSmith are our current worlds.</p>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Publishing, platforms, grants, partnerships, press, and business.</h2>
+      <a href="mailto:hello@refinedbadger.com">hello@refinedbadger.com</a>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-brand">
-      <img src="/assets/favicon.svg" width="34" height="34" alt="">
+      <img src="/assets/refinedbadger-header-mark.webp" width="38" height="38" alt="">
       <span>REFINEDBADGER</span>
     </div>
     <div class="footer-meta">

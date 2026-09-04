@@ -4,23 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found &mdash; RefinedBadger</title>
-  <meta name="theme-color" content="#0b0c0d">
+  <meta name="theme-color" content="#090a0b">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <main class="error-page">
-    <div class="error-card">
-      <img src="/assets/favicon.svg" width="64" height="64" alt="">
-      <p class="eyebrow">404</p>
-      <h1>Page not found.</h1>
-      <a class="button button-primary" href="/">Back to RefinedBadger</a>
-    </div>
+    <img src="/assets/refinedbadger-header-mark.webp" width="72" height="72" alt="">
+    <p class="eyebrow">404</p>
+    <h1>Page not found.</h1>
+    <a href="/">Return to RefinedBadger</a>
   </main>
   <style>
-    .error-page{min-height:100vh;display:grid;place-items:center;width:min(720px,calc(100% - 36px));margin:auto}
-    .error-card{width:100%;padding:clamp(34px,7vw,72px);border:1px solid var(--line);background:var(--bg-raised)}
-    .error-card img{margin-bottom:32px}.error-card h1{margin:14px 0 34px;font-size:clamp(3rem,9vw,6rem)}
+    .error-page{min-height:100vh;width:min(760px,calc(100% - 36px));margin:auto;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.error-page img{margin-bottom:28px;border:1px solid var(--line-strong)}.error-page h1{margin:14px 0 30px}.error-page a{font-weight:750;text-underline-offset:7px;text-decoration-color:var(--copper-light)}
   </style>
 </body>
 </html>

@@ -3,8 +3,8 @@
   "short_name": "RefinedBadger",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0b0c0d",
-  "theme_color": "#0b0c0d",
+  "background_color": "#090a0b",
+  "theme_color": "#090a0b",
   "icons": [
     {
       "src": "/assets/refinedbadger-logo.png",
