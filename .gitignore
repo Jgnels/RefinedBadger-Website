@@ -1,0 +1,19 @@
+node_modules/
+.wrangler/
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Never commit private company records here.
+company-private/
+legal-private/
+banking-private/

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RefinedBadger placeholder mark">
+  <path fill="#11100f" d="M16 4h32l14 28-14 28H16L2 32 16 4Z"/>
+  <path fill="none" stroke="#c7814f" stroke-width="2" d="M17.5 7h29L58.5 32 46.5 57h-29L5.5 32 17.5 7Z"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#e2a87c">RB</text>
+</svg>
