@@ -5,7 +5,7 @@ Official public website repository for **RefinedBadger Studios LLC**.
 - Production domain: https://refinedbadger.com
 - Hosting target: Cloudflare Workers Static Assets
 - Source control: GitHub
-- Public contact: hello@refinedbadger.com
+- Public contact: contact@refinedbadger.com
 
 ## Important security boundary
 
@@ -59,3 +59,9 @@ The public site is intentionally lightweight. The main files are:
 - public/404.html
 
 Replace the temporary RB favicon/logo mark when the final RefinedBadger logo is selected.
+
+## Media and site qualification
+
+- `Tools/prepare-media.ps1` normalizes real game captures to a web-ready 16:9 WebP.
+- `Tools/audit-site.ps1` validates HTML, crawls production links, and produces a Lighthouse report.
+- Prefer real game captures over concept art for public game cards; label concept art explicitly when used.
