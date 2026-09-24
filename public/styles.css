@@ -64,6 +64,7 @@ h2{margin:13px 0 20px;font-size:clamp(2.7rem,5.2vw,5.4rem);line-height:.96;lette
 .more-projects h2{max-width:900px}
 .project-list{display:flex;flex-wrap:wrap;gap:10px;margin-top:44px}
 .project-list span{padding:12px 16px;border:1px solid var(--line);background:var(--panel);color:var(--soft);font-size:.8rem;font-weight:760;letter-spacing:.05em}
+.project-list small{display:block;margin-top:5px;color:var(--muted);font-size:.64rem;font-weight:650;letter-spacing:.04em;text-transform:uppercase}
 
 .studio{display:grid;grid-template-columns:minmax(0,1fr) minmax(180px,.32fr);gap:clamp(48px,8vw,120px);align-items:center;padding:clamp(88px,10vw,140px) 0;border-top:1px solid var(--line)}
 .studio-copy-block{max-width:820px}
